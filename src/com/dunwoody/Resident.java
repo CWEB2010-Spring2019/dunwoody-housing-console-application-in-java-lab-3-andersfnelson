@@ -11,7 +11,16 @@ public int idNumber;
 
 public Resident(int monthlyRent, int floorNumber, String lastName, String firstName
 		) {
-	this.monthlyRent = monthlyRent;
+	
+	this.floorNumber = floorNumber;
+	this.lastName = lastName;
+	this.firstName = firstName;
+	this.idNumber = rand.nextInt(999999);
+
+}
+public Resident(int floorNumber, String lastName, String firstName
+		) {
+	
 	this.floorNumber = floorNumber;
 	this.lastName = lastName;
 	this.firstName = firstName;

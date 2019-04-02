@@ -19,7 +19,7 @@ public class Athlete extends Resident {
 	{
 		super(monthlyRent, floorNumber, lastName, firstName);
 		Random rand = new Random();
-		
+		this.monthlyRent = 1200;
 		this.idNumber = rand.nextInt(999999);	
 	}
 	

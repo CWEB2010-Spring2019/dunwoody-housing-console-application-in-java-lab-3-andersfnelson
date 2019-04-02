@@ -7,11 +7,11 @@ public class ScholarshipRecipient extends Resident {
 	{
 		super(monthlyRent, floorNumber, lastName, firstName);
 		Random rand = new Random();
-		
+		this.monthlyRent = 100;
 		this.idNumber = rand.nextInt(999999);	
 	}
 	
 	public String toString() {
-		return String.format("Scholarship Recipient "+"First Name: "+firstName+"Last Name: "+lastName+"Monthly Rent: "+monthlyRent+ "Floor Number: "+floorNumber+"ID: "+idNumber);  
+		return String.format("Scholarship Recipient "+"First Name: "+firstName+" Last Name: "+lastName+" Monthly Rent: "+monthlyRent+ " Floor Number: "+floorNumber+" ID: "+idNumber);  
 	}
 }
