@@ -20,4 +20,5 @@ public Resident(int monthlyRent, int floorNumber, String lastName, String firstN
 }
 
 
+
 }

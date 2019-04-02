@@ -23,7 +23,9 @@ public class Athlete extends Resident {
 		this.idNumber = rand.nextInt(999999);	
 	}
 	
-	
+	public String toString() {
+		return String.format("Athlete "+"First Name: "+firstName+" Last Name: "+lastName+" Monthly Rent: "+monthlyRent+ " Floor Number: "+floorNumber+" ID: "+idNumber);  
+	}
 	
 		// TODO Auto-generated constructor stub
 	}
