@@ -21,6 +21,7 @@ public class Athlete extends Resident {
 		Random rand = new Random();
 		this.monthlyRent = 1200;
 		this.idNumber = rand.nextInt(999999);	
+		this.ResidentType = "Athlete";
 	}
 	
 	public String toString() {

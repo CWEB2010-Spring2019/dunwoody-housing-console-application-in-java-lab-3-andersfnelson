@@ -10,6 +10,7 @@ public class StudentWorker extends Resident {
 		Random rand = new Random();
 		this.monthlyRent =(int) (1245-(0.5*(hoursWorked*14)));
 		this.idNumber = rand.nextInt(999999);	
+		this.ResidentType = "Student Worker";
 	}
 	
 	public String toString() {

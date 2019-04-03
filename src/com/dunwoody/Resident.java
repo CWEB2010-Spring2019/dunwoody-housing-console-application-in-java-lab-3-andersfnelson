@@ -8,6 +8,7 @@ public int floorNumber;
 public String lastName;
 public String firstName;
 public int idNumber;
+public String ResidentType;
 
 public Resident(int monthlyRent, int floorNumber, String lastName, String firstName
 		) {

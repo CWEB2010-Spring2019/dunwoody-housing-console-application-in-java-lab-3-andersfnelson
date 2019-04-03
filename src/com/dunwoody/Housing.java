@@ -2,18 +2,25 @@ package com.dunwoody;
 import javax.swing.JOptionPane;
 import java.util.stream.Collectors;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class Housing {
 
 	
 	public static void main(String[] args) {
+		//Variable declarations
 		String lastName;
 		String firstName;
 		int rent;
 		int floorNumber;
 		String[] classOptions = {"Athlete", "Student Worker", "Scholarship Recipient"};
 		ArrayList<Resident> ResidentList = new ArrayList<Resident>();
+		
+		
+		
 		// TODO Auto-generated method stub
 		JOptionPane.showMessageDialog(null, "Welcome to the Dunwoody housing application");
 		
@@ -72,8 +79,24 @@ public class Housing {
 		
 		//Exit logic
 		else if(returnValue == JOptionPane.NO_OPTION) {
-			for(int i = 0; i < ResidentList.size(); i++) {
-				System.out.println(ResidentList.toArray()[i].toString());
+			//for(int i = 0; i < ResidentList.size(); i++) {
+			//	System.out.println(ResidentList.toArray()[i].toString());
+			//}
+			Map<String,List<Resident>> groupedResidents = new HashMap<>();
+			for(Resident student: ResidentList) {
+				String key = student.ResidentType;
+				if(groupedResidents.get(key)==null) {
+					//Sorting new array list by key
+					groupedResidents.put(key, new ArrayList<>());
+				}
+				groupedResidents.get(key).add(student);
+			}
+			Set<String> groupedResidentsKeySet = groupedResidents.keySet();
+			for(String i : groupedResidentsKeySet) {
+				List<Resident> stdnts = groupedResidents.get(i);
+				for(Resident x : stdnts) {
+					System.out.println(x.toString());
+				}
 			}
 			//How to group residents
 			JOptionPane.showMessageDialog(null, "Goodbye");

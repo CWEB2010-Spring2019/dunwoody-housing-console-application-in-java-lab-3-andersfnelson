@@ -9,6 +9,7 @@ public class ScholarshipRecipient extends Resident {
 		Random rand = new Random();
 		this.monthlyRent = 100;
 		this.idNumber = rand.nextInt(999999);	
+		this.ResidentType = "Scholarship Recipient";
 	}
 	
 	public String toString() {
