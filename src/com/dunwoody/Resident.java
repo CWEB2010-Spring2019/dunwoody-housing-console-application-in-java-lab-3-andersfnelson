@@ -28,6 +28,9 @@ public Resident(int floorNumber, String lastName, String firstName
 	this.idNumber = rand.nextInt(999999);
 
 }
+public String toString() {
+	return String.format(ResidentType+" | First Name: "+firstName+" | Last Name: "+lastName+" | Monthly Rent: "+monthlyRent+ " | Floor Number: "+floorNumber+" | ID: "+idNumber);  
+}
 
 
 

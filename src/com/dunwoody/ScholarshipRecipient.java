@@ -12,7 +12,7 @@ public class ScholarshipRecipient extends Resident {
 		this.ResidentType = "Scholarship Recipient";
 	}
 	
-	public String toString() {
-		return String.format("Scholarship Recipient "+"First Name: "+firstName+" Last Name: "+lastName+" Monthly Rent: "+monthlyRent+ " Floor Number: "+floorNumber+" ID: "+idNumber);  
-	}
+	//public String toString() {
+	//	return String.format("Scholarship Recipient "+"First Name: "+firstName+" Last Name: "+lastName+" Monthly Rent: "+monthlyRent+ " Floor Number: "+floorNumber+" ID: "+idNumber);  
+	//}
 }
